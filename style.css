@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'apercu_promedium';
+    src: url('./fonts/apercu_medium_pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'neue_haas_grotesk_medium';
+    src: url('./fonts/neuehaasdisplay-mediu-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'apercu_proregular';
+    src: url('./fonts/apercu_regular_pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'apercu_probold';
+    src: url('./fonts/apercu_bold_pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'neue_haas_grotesk_bold';
+    src: url('./fonts/neuehaasdisplay-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.hamburger__content a, .header__static__blur__same-font p, .cars__scroller__element__container__block, a.cars__scroller__element__button, .cars__scroller__element__title{font-family: 'apercu_promedium';}
+.cars h2,.filter a, .filter p , .preface a, .preface p, .driving-school p, .driving-school a{font-family: 'apercu_probold';}
+p.header__static__title, h1 {font-family: 'neue_haas_grotesk_medium';}
+.preface h1, .driving-school h2, .preface h2, .filter h2, .filter h1{font-family: 'neue_haas_grotesk_bold';}
+.header__static__title span, .cars__dot, .red{color: #A7171A;}
+p.header__static__blur__animation__text, .cars__scroller__element__price, .cars__scroller__element__label, .service__container___item{font-family: 'apercu_proregular';}
+p.header__static__title {line-height: 1.2;}
+h1, .service__container{margin: 0 5%;}
+h2{margin: .5em 0;}
+h1{padding-top: 4.5vh;padding-bottom: 2.5vh;}
+.none {color: #fff;}
+.preface, .service {background-color: #232325;}
+.preface__container__box__item, .service__container___item--background {background-color: #3A3A3E;}
+.preface h2, .preface a, .preface p, .preface h1 {color: #EFEFEF;}
+.driving-school, .filter{background-color: #EFEFEF;}
+.driving-school__container__box, .filter__container__box__item{background-color: #fff;}
+.service{color: #F3F3F3;}
+.service__container___item span{color: #7E7E87;}
+h3 {font-size: clamp(1em, 1vw, 1.5em);}
+.filter__container__box{color: black;}
+
+

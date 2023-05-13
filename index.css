@@ -1,0 +1,471 @@
+
+.hamburger {
+    height: 45px;
+    position: relative;
+}
+
+.hamburger span {
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 4.5px;
+    left: 0;
+}
+
+body {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+}
+
+.hamburger-row {
+    right: 5%;
+    padding-bottom: 1em;
+    padding-top: .25em;
+    display: flex;
+    justify-content: flex-end;
+}
+.hamburger {
+    display: block;
+}
+
+.hamburger-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.fix-position {
+    background-color: #000;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    max-width: 1920px;}
+
+.fix-position--active {padding: 0;}
+
+img.header__logo, .hamburger-nav, .fix-position, .fix-position--active img.header__logo, .fix-position--active, .fix-position--active .hamburger-nav, .fix-position--active .hamburger span:nth-child(3), .fix-position--active .hamburger span:nth-child(1), .fix-position--active .hamburger span, .fix-position .hamburger span, .fix-position .hamburger span:nth-child(3), .fix-position .hamburger span:nth-child(1),  .fix-position--active .hamburger-row,  .fix-position .hamburger-row, .fix-position--active .active span:nth-child(1), .fix-position .active span:nth-child(1)  {transition: all .5s ease-in-out;}
+
+a.phone-svg {
+    background-image: url(./icons/phone.svg);
+    width: 20px;
+    height: 20px;
+}
+
+a.phone-svg, a.email-svg {
+    background-repeat: no-repeat;
+    background-color: #151517;
+    background-position: center;
+    border-radius: 100%;
+    margin-right: 0.5em;
+}
+
+a.phone-svg:hover, a.email-svg:hover{
+    background-color: #F3F3F3;
+    transition: all .2s linear;
+}
+
+a.phone-svg:hover{
+    background-image: url(./icons/phone-black.svg);
+    transition: all .2s linear;
+}
+
+a.email-svg:hover{
+    background-image: url(./icons/email-black.svg);
+    transition: all .2s linear;
+}
+
+a.driving-school__container__box__text--email:hover, a.driving-school__container__box__text--phone:hover{
+    background-color: #7E7E87;
+    transition: all .2s linear;
+}
+
+a.driving-school__container__box__text--email:hover{
+    background-image: url(./icons/email.svg);
+    transition: all .2s linear;
+}
+
+a.driving-school__container__box__text--phone:hover{
+    background-image: url(./icons/phone.svg);
+    transition: all .2s linear;
+}
+
+a.phone-svg {
+    background-image: url(./icons/phone.svg);
+    padding: 2.9px 12.5px;
+    background-size: 12px 12px;
+}
+
+a.email-svg {
+    background-image: url(./icons/email.svg);
+    padding: 2.9px 12.5px;
+    background-size: 13px 12px;
+}
+
+.header__static__blur__office p, .header__static__blur__executive p, p.header__static__blur__address__text, p.header__static__blur__open__text {
+    line-height: 28px;
+}
+
+p.header__static__blur__address__title, p.header__static__blur__open__title, .header__static__blur__animation {
+    padding-top: 9.6px;
+}
+
+.header__static__blur {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.header__static__blur {
+    width: 100%;
+}
+
+.header__static {
+    position: relative;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all .75s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#header__office { grid-area: header__office; }
+#header__adress { grid-area: header__adress; }
+#header__executive { grid-area: header__executive; }
+#header__opentime { grid-area: header__opentime; }
+
+.cars__scroller{
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.cars__scroller__element{
+    padding: 0.75em;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    position: relative;
+}
+
+.cars__scroller__element img{
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.cars__scroller--snaps{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 5em;
+    margin: 0 5%;
+    border-radius: 15px;
+}
+
+.cars__scroller--snaps > *{
+    scroll-snap-align: start;
+}
+
+.cars__scroller::-webkit-scrollbar{
+    height: 1em;
+}
+
+.cars__scroller::-webkit-scrollbar-track{
+    background-color: #FFFFFF;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+.cars__scroller::-webkit-scrollbar-thumb{
+    background-color: #3A3A3E;
+    border-radius: 100vw;
+    border: 3px solid #FFFFFF;
+}
+
+.cars__scroller::-webkit-scrollbar-thumb:hover{
+    background-color: #232325;
+}
+
+.cars__scroller__element__container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #7e7e873d;
+    border-bottom: 1px solid #7e7e873d;
+}
+
+
+.cars__scroller__element {
+    margin-bottom: 1em;
+}
+
+.cars__scroller__element__container__block__car{background-image: url(./icons/car.svg);padding: .9em;}
+.cars__scroller__element__container__block__engine{background-image: url(./icons/engine.svg);padding: 0.6em;}
+.cars__scroller__element__container__block__time{background-image: url(./icons/time.svg);padding: 0.6em;}
+.cars__scroller__element__container__block__speedmeter{background-image: url(./icons/speedmeter.svg);padding: 0.6em}
+.cars__scroller__element__container__block__transmission{background-image: url(./icons/transmission.svg);padding: 0.7em;}
+.cars__scroller__element__container__block__oil{background-image: url(./icons/oil.svg);padding: 0.4em;}
+
+.cars__scroller__element__container__block__car, .cars__scroller__element__container__block__engine, .cars__scroller__element__container__block__time, .cars__scroller__element__container__block__speedmeter, .cars__scroller__element__container__block__transmission, .cars__scroller__element__container__block__oil{
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.25em;
+}
+
+.cars__scroller__element__container__block__engine, .cars__scroller__element__container__block__time, .cars__scroller__element__container__block__speedmeter, .cars__scroller__element__container__block__transmission, .cars__scroller__element__container__block__oil{
+    background-size: 15px 15px;
+}
+
+.cars__scroller__element__container__block__car{
+    background-size: 25px 15px;
+}
+
+.cars__scroller__element__container__block--active {
+    margin-top: -10px;
+}
+
+.cars__scroller__element__price p {
+    margin-bottom: 0.2em;
+}
+
+a.cars__scroller__element__button {
+    text-align: center;
+    background-color: #EFEFEF;
+    padding: 1.45em 0 1.45em 0;
+    border-radius: 9px;
+    border: 1px solid #EFEFEF;
+    font-size: .7em;
+    display: flex;
+    justify-content: center;
+}
+
+.cars__scroller__element__price {
+    padding-bottom: 1em;
+}
+
+.cars__scroller__element__button:hover{
+    border: 1px solid #000;
+    transition: .2s ease-in-out;
+}
+
+img.cars__scroller__element__img {
+    border-radius: 9px;
+    border: 1px solid #7e7e873d;
+}
+
+.cars__scroller__element__img--active{
+    object-position: bottom;
+}
+
+.cars__scroller__element__img--active-second{
+    object-position: center;
+}
+
+.cars {
+    background-color: #EFEFEF;    
+}
+
+.cars__scroller__element__button--active{
+    bottom: 1.05em;
+    position: absolute;
+    width: calc(100% - 2.25em);
+}
+
+.cars__scroller__element__h2--active{
+    border-bottom: 1px solid #7e7e873d;
+    padding-bottom: 0.5em;
+}
+
+.preface__container {
+    display: grid;
+    margin: 0 5%;
+}
+
+.filter__container{margin: 0 5%;}
+
+#preface__container__box__item-01 { grid-area: preface-01; }
+#preface__container__box__item-02 { grid-area: preface-02; }
+#preface__container__box__item-03 { grid-area: preface-03; }
+
+.preface__container__box__item, .driving-school__container__box, .filter__container__box__item {
+    border-radius: 11px;
+    padding: 1em;
+}
+
+.preface__container__box, .filter__container__box{
+    text-decoration: none;
+}
+
+.arrow-right {
+    background-size: 19px 14px;
+    background-repeat: no-repeat;
+    padding: 1em;
+    background-position: center;
+    margin-left: 0.5em;
+}
+
+.preface__container__box__item__button span, .filter__container__box__item__button span{
+    background-image: url(./icons/arrow-right-large-white.svg);
+}
+
+.arrow-right--driving-school{
+    background-image: url(./icons/arrow-right-large-black.svg);
+}
+
+.preface__container__box__item__text, .filter__container__box__item__text {
+    line-height: 1.75;
+    letter-spacing: .1px;
+    padding: 1em 0;
+    padding-bottom: 2em;
+}
+
+.preface__container__box__item__button, .driving-school__container__box__button, a.service__container___item__button, .filter__container__box__item__button {
+    font-size: .8em;
+}
+
+.preface__container__box__item:hover{
+    background-color: #EFEFEF;
+}
+
+.filter__container__box__item:hover {background-color: #232325;}
+.preface__container__box__item:hover > h2 {
+    color: #000000;
+}
+
+.filter__container__box__item:hover > h2{color: #fff;}
+
+.preface__container__box__item:hover > .preface__container__box__item__text span{color: #A7171A;transition: .2s ease-in-out;}
+.filter__container__box__item:hover > .filter__container__box__item__text span{color: #ffffff;transition: .35s ease-in-out;}
+.filter__container__box__item__text span{color: #A7171A;transition: .2s ease-in-out;}
+.preface__container__box__item:hover > .preface__container__box__item__text{color: #000;transition: .2s ease-in-out;}
+.filter__container__box__item:hover > .filter__container__box__item__text{color: #fff;transition: .2s ease-in-out;}
+.preface__container__box__item:hover > .preface__container__box__item__button{color: #000;transition: .2s ease-in-out;}
+.filter__container__box__item:hover > .filter__container__box__item__button{color: #fff;transition: .2s ease-in-out;}
+.preface__container__box__item:hover > .preface__container__box__item__button span{background-image: url(./icons/arrow-right-large-black.svg);transition: .2s ease-in-out;}
+.filter__container__box__item:hover > .filter__container__box__item__button span{background-image: url(./icons/arrow-right-large-white.svg);transition: .2s ease-in-out;}
+.filter__container__box__item__button span{background-image: url(./icons/arrow-right-large-black.svg);transition: .2s ease-in-out;}
+.driving-school__container__box__button:hover{color: #A7171A;transition: .2s ease-in-out;}
+.driving-school__container__box__button:hover > .arrow-right{background-image: url(./icons/arrow-right-large-red.svg);transition: .2s ease-in-out;}
+
+.preface__container__box{display: table;height: 100%;}
+.filter__container__box{display: table}
+.preface__container__box__item, .filter__container__box__item {display: table-cell;position: relative;}
+p.preface__container__box__item__button, p.filter__container__box__item__button {position: absolute;bottom: 1em;left: 1em;}
+
+.driving-school__container {margin-left: 5%;margin-right: calc(5% - 1em);}
+
+.driving-school__container__box {margin-right: 1em;}
+
+.driving-school__container__box {margin-right: 1em;position: relative;}
+
+p.driving-school__container__box__text {padding-top: 1em;padding-bottom: 3em;}
+
+a.driving-school__container__box__button {position: absolute;bottom: 1em;left: 1em;}
+
+a.driving-school__container__box__button {padding: 1em 0;}
+
+.driving-school__container__box__text--active {line-height: 1.7em;}
+
+#service__container___item-01 { grid-area: service-01; }
+#service__container___item-02 { grid-area: service-02; }
+#service__container___item-03 { grid-area: service-03; }
+#service__container___item-04 { grid-area: service-04; }
+#service__container___item-05 { grid-area: service-05; }
+#service__container___item-06 { grid-area: service-06; }
+#service__container___item-07 { grid-area: service-07; }
+#service__container___item-08 { grid-area: service-08; }
+#service__container___item-09 { grid-area: service-09; }
+#service__container___item-10 { grid-area: service-10; }
+
+.service__container___item {
+    border-radius: 6px;
+    position: relative;
+}
+
+.service__container___item img {width: 100%;height: 100%;object-fit: cover;border-radius: 6px;}
+
+.service__container___item-01, .service__container___item-02{
+    display: flex;
+    align-items: flex-end;
+}
+
+a.service__container___item__button {
+    background-color: #000;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    text-align: center;
+    padding: 0.8em 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+a.service__container___item__button:hover {
+    border: 1px solid rgb(255, 255, 255);
+    transition: .2s ease-in-out;
+}
+
+.service p, .service h3 {margin: 0;}
+
+.service__container___item--email:hover, .service__container___item--facebook:hover, .service__container___item--location:hover, .service__container___item--phone:hover{
+    background-color: #7E7E87;
+    transition: all 0.2s linear 0s;
+}
+
+.service__container___item--flex {display: flex;align-items: center;justify-content: space-between;}
+
+h1.filter__title {padding-bottom: 1.5em;}
+
+.down{padding:0 5%;position: relative;}
+p.down__title__small {padding-top: 8em;margin-top: 0;}
+p.down__title__large {margin-bottom: 0;}
+.down__text__up {padding-bottom: 2em;}
+.down__text__up img:hover {filter: opacity(0.5);}
+.down__text__up img {height: 15px;width: auto;transition: all .2s linear;}
+.down__text {font-size: .95em;}
+.black-background {background-color: #000;height: 3em;}
+.down__text__second__about-us, .down__text__second__home {text-decoration: none;}
+a.down__text__second__home {line-height: 3em;}
+.down__text__second__about-us, .down__text__second__home{color: #000;}
+.down__text__second__about-us:hover, .down__text__second__home:hover{color: #A7171A;transition: all .2s linear;}
+a.down__text__first__created {color: #000;text-decoration: none;}
+a.down__text__first__created:hover{color: #A7171A;}
+a.down__text__first__created:hover > span{color: #151517;}
+.up__icon--all {background-image: url(./icons/arrow-white.svg);padding: 2.9px 12.5px;background-repeat: no-repeat;background-position: center;margin-left: 0.5em;margin-right: -0.25em;}
+.down__text__first, .down__text__second{font-family: 'apercu_promedium';}
+.up__text__title, p.down__title__large {font-family: 'neue_haas_grotesk_medium';}
+.up__text__question, p.down__title__small {font-family: 'apercu_proregular';}
+.down{background-color: #F3F3F3;}
+.up {background-color: #000;}
+.up__icon__email{background-image: url(./icons/email-white.svg);}
+.up__icon__facebook{background-image: url(./icons/facebook-white.svg);}
+.up__icon__location{background-image: url(./icons/location-white.svg);}
+.up__icon__phone{background-image: url(./icons/phone-white.svg);}
+
+.up__icon__email:hover{background-image: url(./icons/email-red.svg);transition: all .2s linear;}
+.up__icon__facebook:hover{background-image: url(./icons/facebook-red.svg);transition: all .2s linear;}
+.up__icon__location:hover{background-image: url(./icons/location-red.svg);transition: all .2s linear;}
+.up__icon__phone:hover{background-image: url(./icons/phone-red.svg);transition: all .2s linear;}
+.up__icon--all{padding:2.9px 18px;margin-left:1.5em;}
+.up__text {color: #F3F3F3;}
+
+html{scroll-behavior: smooth;}
+
+a.driving-school__container__box__button {text-decoration: none;color: #000;}
+a.service__container___item__button {text-decoration: none;color: #fff;}
+
+a.cars__scroller__element__button {text-decoration: none;color: #000;}
+
+.red-dot::after{content: '.';color: #A7171A;}
+.down__text__second ul {margin: 0;list-style: none;padding: 0;}
+.service img {width: 100%;height: 100%;object-position: center;object-fit: cover;border-radius: 6px;}
+
